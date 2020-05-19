@@ -1,0 +1,98 @@
+{
+  "title": "Left Command + Shift + Arrows | Control Media",
+  "rules": [
+    {
+      "description": "Left Command + Shift + Left Arrow | Rewind",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "left_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_alt",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "rewind"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Left Command + Shift + Left Arrow | FastForward",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_alt",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "fastforward"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description":  "Left Command + Alt + Shift + Up Arrow | Volume Up",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "up_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_alt",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "volume_increment"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description":  "Left Command + Alt + Shift + Up Arrow | Volume Down",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "down_arrow",
+            "modifiers": {
+              "mandatory": [
+                "left_shift",
+                "left_alt",
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "volume_decrement"
+            }
+          ]
+        }
+      ]
+    }
+
+  ]
+}
